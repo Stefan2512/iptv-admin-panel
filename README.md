@@ -1,12 +1,38 @@
-# React + Vite
+# IPTV Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React + PHP admin panel for IPTV management.
 
-Currently, two official plugins are available:
+## Features
+- Real-time dashboard with MySQL data
+- Stream management (Live TV, Movies, Series, Radio)
+- User account management
+- Server monitoring
+- Device management (MAG, Enigma2)
+- Modern responsive UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- Frontend: React + Vite + Tailwind CSS
+- Backend: PHP 8.4 + MySQL
+- Server: Nginx
+- Charts: Recharts
 
-## Expanding the ESLint configuration
+## Setup
+1. Clone repository
+2. Install dependencies: `npm install`
+3. Configure MySQL in `backend/config.php`
+4. Start frontend: `npm run dev`
+5. Access: http://your-server:3000
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API Endpoints
+- `GET /dashboard` - Dashboard stats
+- `GET /streams` - Stream list
+- `GET /users` - User management
+- `GET /servers` - Server status
+- `GET /devices` - Device management
+
+## Production
+- Frontend: http://95.216.67.55:3000/
+- API: http://95.216.67.55:9999/
+- Compatible with XUI One v1.2.12
+
+Created by Stefan2512
