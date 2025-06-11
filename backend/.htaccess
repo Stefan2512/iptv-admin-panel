@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/dashboard$ dashboard.php [L]
+RewriteRule ^api/streams$ streams.php [L]
+RewriteRule ^api/streams/(.*)$ streams.php/$1 [L]
+RewriteRule ^api/users$ users.php [L]
+RewriteRule ^api/users/(.*)$ users.php/$1 [L]
+RewriteRule ^api/servers$ servers.php [L]
+RewriteRule ^api/devices$ devices.php [L]

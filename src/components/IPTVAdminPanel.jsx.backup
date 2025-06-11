@@ -1,0 +1,6 @@
+// [Copiază din nou tot codul din artifact, dar înlocuiește liniile cu TODO]
+// Înlocuiește toate apelurile de tipul:
+// const data = JSON.parse(localStorage.getItem('...') || '[]');
+// cu:
+// const response = await fetch('http://95.216.67.55:8080/api/...');
+// const data = await response.json();
